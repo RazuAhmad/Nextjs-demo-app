@@ -1,12 +1,14 @@
 import '@styles/global.css';
 
+import Nav from '@components/Nav';
+import Provider from '@components/Provider';
+
 export const metadata= {
     title: "nextjsdemoapp",
     description: "Discover & share AI Prompts"
 }
 
-function RootLayout({children}) {
-
+const RootLayout = ({children}) => {
   return (
     <html lang='en'>
         <body>
@@ -15,6 +17,7 @@ function RootLayout({children}) {
             </div>
 
             <main>
+                <Nav/>
                 {children}
             </main>
 
